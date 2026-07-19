@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+pyodbc
+python-multipart
+requests
+cloudinary
+twilio
+python-dotenv
+PySocks
+pandas
+numpy
+xgboost
+lightgbm
+scikit-learn
+joblib
+google-generativeai
