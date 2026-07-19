@@ -11,8 +11,5 @@ CF_PID=$!
 
 sleep 5
 
-echo "Checking local port..."
-nc -vz 127.0.0.1 15433 || true
-
 echo "Starting FastAPI..."
 python main.py
