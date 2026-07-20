@@ -24,6 +24,13 @@ except Exception as e:
     print("❌ TCP FAILED:", e)
 EOF
 
+/opt/mssql-tools18/bin/sqlcmd \
+    -S 127.0.0.1,15433 \
+    -U readonly_sanjay \
+    -P 'readonly@123' \
+    -d Medishopdb \
+    -Q "SELECT @@VERSION"
+
 python main.py
 
 echo "Starting FastAPI..."
