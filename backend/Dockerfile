@@ -15,7 +15,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /u
 
 RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/debian/11/prod bullseye main" > /etc/apt/sources.list.d/mssql-release.list
 
-RUN apt-get update && ACCEPT_EULA=Y apt-get install -y msodbcsql17
+RUN apt-get update && ACCEPT_EULA=Y apt-get install -y msodbcsql18
 
 # Install cloudflared
 RUN curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 \
