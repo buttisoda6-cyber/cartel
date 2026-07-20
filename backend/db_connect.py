@@ -11,7 +11,7 @@ DB_USER = os.environ.get("DB_USER", "readonly_sanjay")
 DB_PASSWORD = os.environ.get("DB_PASSWORD", "readonly@123")
 
 connection_string = (
-    "DRIVER={ODBC Driver 17 for SQL Server};"
+    "DRIVER={ODBC Driver 18 for SQL Server};"
     f"SERVER={DB_HOST},{DB_PORT};"
     f"DATABASE={DB_NAME};"
     f"UID={DB_USER};"
